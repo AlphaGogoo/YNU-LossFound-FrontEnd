@@ -132,7 +132,8 @@ router.beforeEach((to, from, next) => {
             ElMessage({
                 message: '已登录，请勿重复登录',
                 type: 'error',
-                duration: 500
+                duration: 500,
+                showClose: true
             })
             return false;
         }

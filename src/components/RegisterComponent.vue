@@ -168,6 +168,7 @@ export default {
                                 duration: 1000
                             })
                             //注册信息清空
+                            sessionStorage.clear();
                             Object.keys(this.registerInfo).forEach(key => this.registerInfo[key] = '');
                             this.$router.push({
                                 path: '/Login'
